@@ -15,9 +15,10 @@ public class Main {
 		for(int i=0; i<n; i++) {
 			height[i] = sc.nextInt();
 		}
-		
-		int result = maxArea(height);
+		LargestElement le = new LargestElement();
+		int result = le.largestElement(height);
 		System.out.println(result);
+		
 	}
 	
 //	Container with most water solution leetCode
