@@ -16,8 +16,12 @@ public class Main {
 			height[i] = sc.nextInt();
 		}
 		LargestElement le = new LargestElement();
-		int result = le.largestElement(height);
-		System.out.println(result);
+		int largest = le.largestElement(height);
+		System.out.println("largest is: "+largest);
+		
+		SecondLargestElement sle = new SecondLargestElement();
+		int secondLargest = sle.secondLargestElement(height);
+		System.out.println("Second Largest is: "+secondLargest);
 		
 	}
 	

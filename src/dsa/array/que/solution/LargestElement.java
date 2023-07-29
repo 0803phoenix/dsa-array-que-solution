@@ -1,6 +1,7 @@
 package dsa.array.que.solution;
 
 public class LargestElement {
+//	Time Complexity O(N)
 	public int largestElement(int arr[]) {
 		 int max =0;
 		 
