@@ -15,14 +15,17 @@ public class Main {
 		for(int i=0; i<n; i++) {
 			height[i] = sc.nextInt();
 		}
-		LargestElement le = new LargestElement();
-		int largest = le.largestElement(height);
-		System.out.println("largest is: "+largest);
-		
-		SecondLargestElement sle = new SecondLargestElement();
-		int secondLargest = sle.secondLargestElement(height);
-		System.out.println("Second Largest is: "+secondLargest);
-		
+//		LargestElement le = new LargestElement();
+//		int largest = le.largestElement(height);
+//		System.out.println("largest is: "+largest);
+//		
+//		SecondLargestElement sle = new SecondLargestElement();
+//		int secondLargest = sle.secondLargestElement(height);
+//		System.out.println("Second Largest is: "+secondLargest);
+//		
+		RemoveDuplicates rd = new RemoveDuplicates();
+		int size = rd.removeDuplicates(height);
+		System.out.println("Size of array after removing duplicate: "+size);
 	}
 	
 //	Container with most water solution leetCode

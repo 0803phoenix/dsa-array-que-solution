@@ -1,7 +1,8 @@
 package dsa.array.que.solution;
 
 public class SecondLargestElement {
-//		Time complexity O(N)
+//		Time complexity O(2N)
+//	Considering array contain only positive value
 	public static int secondLargestElement(int arr[]) {
 		int largest =0;
 		 int secondLargest = -1;
