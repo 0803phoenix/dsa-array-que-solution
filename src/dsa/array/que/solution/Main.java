@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of the array");
 		int n = sc.nextInt();
 		
 		int height[] = new int[n];
@@ -23,9 +24,14 @@ public class Main {
 //		int secondLargest = sle.secondLargestElement(height);
 //		System.out.println("Second Largest is: "+secondLargest);
 //		
-		RemoveDuplicates rd = new RemoveDuplicates();
-		int size = rd.removeDuplicates(height);
-		System.out.println("Size of array after removing duplicate: "+size);
+//		RemoveDuplicates rd = new RemoveDuplicates();
+//		int size = rd.removeDuplicates(height);
+//		System.out.println("Size of array after removing duplicate: "+size);
+		
+		System.out.println("Enter the number by which you want to rotate the array: " );
+		int k = sc.nextInt();
+		RotateByK rk = new RotateByK();
+		rk.rotateByK(height, k);
 	}
 	
 //	Container with most water solution leetCode
