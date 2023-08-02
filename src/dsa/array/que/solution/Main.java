@@ -8,13 +8,22 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the size of the array");
-		int n = sc.nextInt();
+		System.out.println("Enter the size of the first array");
+		int n1 = sc.nextInt();
 		
-		int height[] = new int[n];
-		System.out.println("Enter the elements of array");
-		for(int i=0; i<n; i++) {
-			height[i] = sc.nextInt();
+		int height1[] = new int[n1];
+		System.out.println("Enter the elements of first array");
+		for(int i=0; i<n1; i++) {
+			height1[i] = sc.nextInt();
+		}
+		
+		System.out.println("Enter the size of the first array");
+		int n2 = sc.nextInt();
+		
+		int height2[] = new int[n2];
+		System.out.println("Enter the elements of second array");
+		for(int i=0; i<n2; i++) {
+			height2[i] = sc.nextInt();
 		}
 //		LargestElement le = new LargestElement();
 //		int largest = le.largestElement(height);
@@ -28,10 +37,26 @@ public class Main {
 //		int size = rd.removeDuplicates(height);
 //		System.out.println("Size of array after removing duplicate: "+size);
 		
-		System.out.println("Enter the number by which you want to rotate the array: " );
-		int k = sc.nextInt();
-		RotateByK rk = new RotateByK();
-		rk.rotateByK(height, k);
+//		System.out.println("Enter the number by which you want to rotate the array: " );
+//		int k = sc.nextInt();
+//		RotateByK rk = new RotateByK();
+//		rk.rotateByK(height, k);
+		
+//		MoveZerosAtEnd mz = new MoveZerosAtEnd();
+//		mz.moveZeros(height);
+		
+//		System.out.println("Enter the number to be searched in the array: ");
+//		int num = sc.nextInt();
+//		LinearSearch ls = new LinearSearch();
+//		int result = ls.linearSearch(height, n, num);
+//		System.out.println(result);
+		
+//		UnionOfArrays ua = new UnionOfArrays();
+//		ua.union(height1, height2);
+		
+		IntersectionOfArrays ia = new IntersectionOfArrays();
+		ia.intersection(height1, height2);
+		
 	}
 	
 //	Container with most water solution leetCode
