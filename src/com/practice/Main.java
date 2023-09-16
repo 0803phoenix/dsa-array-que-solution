@@ -2,24 +2,17 @@ package com.practice;
 
 public class Main {
 	public static void main(String[] args) {
-		String s = "ab";
-		String goal = "ba";
-		buddyStrings(s, goal);
-	}
-	public static boolean buddyStrings(String s, String goal) {
-		char [] sArray = s.toCharArray();
-	     char [] goalArray = goal.toCharArray();
-
-	     for(int i=0; i<sArray.length; i++){
-	         for(int j=0 ; j<goalArray.length; j++){
-	             if(sArray[i] == goalArray[j]){
-	                 char temp = goalArray[j];
-	                 goalArray[j+1] = goalArray[j];
-	                 goalArray[j] = temp;
-	             }
-	         }
-	     }  
+		Practice1 newPractice = new Practice1();
+		Practice newPractice1 = new Practice();
+		newPractice.setQueNumber(2);
+		newPractice.setAnsNumber(2);
 		
-		return false;
+		System.out.println(newPractice.getAnsNumber());
+		System.out.println(newPractice.getQueNumber());
+		System.out.println(newPractice.add(2, 3));
+		System.out.println(newPractice1.add(2, 5));
+		newPractice.method();
+		PracticeInterface.staticMethod();
+		
 	}
 }
